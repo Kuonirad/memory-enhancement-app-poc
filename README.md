@@ -1,12 +1,8 @@
-# 🧠 AI-Powered Memory Enhancement Application Prototype (1-2 Day PoC)
+#  AI-Powered Memory Enhancement Application Prototype (1-2 Day PoC)
 
 ![GitHub](https://img.shields.io/github/license/Kuonirad/memory-enhancement-app-poc)
 ![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react)
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-3.9.0-orange?logo=tensorflow)
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Kuonirad/memory-enhancement-app-poc/main/public/logo512.png" alt="Memory Enhancement App Logo" width="200"/>
-</p>
 
 ## 📑 Table of Contents
 - [Project Overview](#-project-overview)
@@ -17,7 +13,6 @@
 - [Development](#-development)
 - [Troubleshooting](#-troubleshooting)
 - [Prototype Concept](#-prototype-concept)
-- [Contribute to the PoC](#-contribute-to-the-poc)
 - [Recent Changes and Improvements](#-recent-changes-and-improvements)
 - [License](#-license)
 
@@ -76,12 +71,6 @@ To get started with development or contribute to the project, follow these steps
 
 Explore the project's development process:
 
-- [Project Scope and Objectives](docs/planning/project_scope.md)
-- [Research and Methodology](docs/planning/rapid_research.md)
-- [Design and Prototyping](docs/design/prototype.md)
-- [Development Process](docs/development/process.md)
-- [Testing and Refinement](docs/testing/refinement.md)
-- [Deployment Instructions](docs/deployment/instructions.md)
 - [Future Enhancements](docs/revolutionary_enhancements.md)
 
 ## 🧪 Development
@@ -120,14 +109,6 @@ This prototype demonstrates the potential of integrating AI and quantum-inspired
 
 These technologies work together to create a more effective and personalized memory enhancement experience, laying the groundwork for future advancements in AI-powered cognitive assistance.
 
-## 🤝 Contribute to the PoC
-
-We welcome contributions to expand this prototype:
-
-- 📢 [Report Issues](https://github.com/Kuonirad/memory-enhancement-app-poc/issues)
-- 💡 [Share Ideas](https://github.com/Kuonirad/memory-enhancement-app-poc/discussions)
-- 🔧 [Submit Pull Requests](https://github.com/Kuonirad/memory-enhancement-app-poc/pulls)
-
 ## 🆕 Recent Changes and Improvements
 
 Latest updates in our 1-2 day prototype development:
@@ -139,9 +120,9 @@ Latest updates in our 1-2 day prototype development:
 
 These improvements reflect our progress in the 1-2 day prototype development, focusing on core functionality and maintainability.
 
-## 📜 License
+##  License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 <p align="center">
   <strong>Explore the Potential of AI in Memory Enhancement!</strong>
