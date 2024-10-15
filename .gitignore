@@ -52,3 +52,21 @@ venv/
 # Python cache files
 __pycache__/
 *.pyc
+
+# Virtual environments
+fresh_venv/
+fresh_venv_310/
+qiskit_env/
+
+# Temporary and debugging files
+inspect_qiskit.py
+inspect_qiskit_detailed.py
+new_setup_env.sh
+qiskit_versions.txt
+test_qiskit_imports.py
+verify_qiskit.py
+verify_qiskit_aer.py
+verify_qiskit_installation.py
+
+# Keep requirements.txt
+!requirements.txt
