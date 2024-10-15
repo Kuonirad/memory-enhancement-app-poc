@@ -24,13 +24,13 @@ def main():
 
     modules_to_test = [
         'qiskit',
-        'qiskit.providers.aer',
+        'qiskit_aer',
         'numpy',
         'scipy',
         'matplotlib',
         'pandas',
         'sympy',
-        'src.enhancements.quantum_inspired_optimization.quantum_inspired_optimization'
+        'enhancements.quantum_inspired_optimization.quantum_inspired_optimization'
     ]
 
     for module_name in modules_to_test:
