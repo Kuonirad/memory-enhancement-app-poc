@@ -21,3 +21,33 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Debugging scripts
+check_*.py
+qiskit_integration_test.py
+
+# Environment
+.python-version
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
