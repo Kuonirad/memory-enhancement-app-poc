@@ -30,6 +30,7 @@ venv/
 
 # Debugging scripts
 check_*.py
+!check_python.py
 qiskit_integration_test.py
 
 # Environment
