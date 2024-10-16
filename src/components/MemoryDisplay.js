@@ -1,6 +1,5 @@
-/** @jsx h */
-import { h } from "https://esm.sh/preact@10.5.15";
-import { useState, useEffect } from "https://esm.sh/preact@10.5.15/hooks";
+import { h } from "preact";
+import { useState, useEffect } from "preact/hooks";
 
 function MemoryDisplay() {
   const [memories, setMemories] = useState([]);
