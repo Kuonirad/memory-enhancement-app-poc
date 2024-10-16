@@ -1,6 +1,6 @@
 /** @jsx h */
-import { h } from "preact";
-import { useState } from "preact/hooks";
+import { h } from "https://esm.sh/preact@10.5.15";
+import { useState } from "https://esm.sh/preact@10.5.15/hooks";
 
 function EnhancementTools() {
   const [activeTools, setActiveTools] = useState([]);

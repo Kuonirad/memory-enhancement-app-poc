@@ -2,14 +2,14 @@
   "compilerOptions": {
     "allowJs": true,
     "jsx": "react-jsx",
-    "jsxFactory": "React.createElement",
-    "jsxFragmentFactory": "React.Fragment",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "lib": ["deno.window", "dom", "dom.iterable", "dom.asynciterable"],
     "strict": true
   },
   "lint": {
     "files": {
-      "include": ["src/"]
+      "include": ["src/", "src/deno_components/"]
     },
     "rules": {
       "tags": ["recommended"],
@@ -18,7 +18,7 @@
   },
   "fmt": {
     "files": {
-      "include": ["src/"]
+      "include": ["src/", "src/deno_components/"]
     },
     "options": {
       "useTabs": false,
@@ -29,10 +29,10 @@
     }
   },
   "test": {
-    "include": ["src/"],
+    "include": ["src/", "src/deno_components/"],
     "exclude": ["node_modules/"]
   },
   "importMap": "import_map.json",
   "jsx": "react",
-  "jsxImportSource": "react"
+  "jsxImportSource": "preact"
 }
