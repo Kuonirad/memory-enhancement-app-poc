@@ -1,6 +1,7 @@
-import React from "react";
+/** @jsx h */
+import { h, Component } from "https://esm.sh/preact@10.5.15";
 
-class ErrorBoundary extends React.Component {
+class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
@@ -10,8 +11,8 @@ class ErrorBoundary extends React.Component {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-    console.log("Error caught by ErrorBoundary:", error, errorInfo);
+  componentDidCatch(error, info) {
+    console.log("Error caught by ErrorBoundary:", error, info);
   }
 
   render() {

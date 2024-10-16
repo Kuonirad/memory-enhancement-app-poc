@@ -1,9 +1,21 @@
+/** @jsx h */
+import { h } from "https://esm.sh/preact@10.5.15";
+import { useState, useEffect } from "https://esm.sh/preact@10.5.15/hooks";
+
 function MemoryDisplay() {
+  const [memories, setMemories] = useState([]);
+
+  useEffect(() => {
+    // TODO: Implement fetching memories from storage
+    setMemories(["Sample memory 1", "Sample memory 2"]);
+  }, []);
+
   return (
-    <div className="memory-display-component">
+    <div class="memory-display-component">
       <ul>
-        <li>Sample memory 1</li>
-        <li>Sample memory 2</li>
+        {memories.map((memory, index) => (
+          <li key={index}>{memory}</li>
+        ))}
       </ul>
     </div>
   );
