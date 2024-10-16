@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install Dependencies
+    - name: Install Node Dependencies
       run: npm ci
 
     - name: Run ESLint
@@ -29,3 +29,32 @@ jobs:
 
     - name: Test
       run: npm test
+
+    - name: Set up Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Run Deno Lint
+      run: deno lint
+
+    - name: Run Deno Tests
+      run: deno test
+
+    - name: Verify Deno Integration
+      run: deno --version && deno info
+
+  deploy-beta:
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Deploy to Beta Environment
+      run: |
+        echo "Deploying to beta environment"
+        # Add your deployment commands here
+        # For example:
+        # npm run deploy:beta
