@@ -1,5 +1,4 @@
 import { h } from "preact";
-import { useState } from "preact/hooks";
 import "./App.css";
 import MemoryInput from "./components/MemoryInput.js";
 import MemoryDisplay from "./components/MemoryDisplay.js";
