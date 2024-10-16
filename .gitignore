@@ -34,29 +34,31 @@ check_*.py
 qiskit_integration_test.py
 
 # Environment
+.env
 .python-version
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # Logs
 *.log
 
 # OS generated files
 Thumbs.db
+.DS_Store
 
-# Virtual environment
+# Virtual environments
 venv/
+fresh_venv/
+fresh_venv_310/
+qiskit_env/
 
 # Python cache files
 __pycache__/
 *.pyc
-
-# Virtual environments
-fresh_venv/
-fresh_venv_310/
-qiskit_env/
 
 # Temporary and debugging files
 inspect_qiskit.py
@@ -68,5 +70,22 @@ verify_qiskit.py
 verify_qiskit_aer.py
 verify_qiskit_installation.py
 
+# Deno
+.deno/
+
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
 # Keep requirements.txt
 !requirements.txt
+
+# Backup files
+*.backup
+
+# Local configuration files
+*.local.json
+*.local.js

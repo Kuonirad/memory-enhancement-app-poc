@@ -1,8 +1,9 @@
-#  AI-Powered Memory Enhancement Application Prototype (1-2 Day PoC)
+# AI-Powered Memory Enhancement Application Prototype (1-2 Day PoC)
 
 ![GitHub](https://img.shields.io/github/license/Kuonirad/memory-enhancement-app-poc)
-![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react)
+![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-3.9.0-orange?logo=tensorflow)
+![Deno](https://img.shields.io/badge/Deno-1.44.1-green?logo=deno)
 
 ## 📑 Table of Contents
 - [Project Overview](#-project-overview)
@@ -11,6 +12,7 @@
 - [Getting Started](#-getting-started)
 - [Project Documentation](#-project-documentation)
 - [Development](#-development)
+- [Deno Integration](#-deno-integration)
 - [Troubleshooting](#-troubleshooting)
 - [Prototype Concept](#-prototype-concept)
 - [Recent Changes and Improvements](#-recent-changes-and-improvements)
@@ -87,12 +89,20 @@ Create an optimized build for deployment:
 npm run build
 ```
 
+### Deno Integration
+This project now includes Deno integration. To run Deno-specific tasks:
+```bash
+deno task <task-name>
+```
+Refer to the `deno.json` file for available tasks.
+
 ## 🛠️ Troubleshooting
 
 If you encounter any issues, consider the following steps:
 
 - **Check Node.js and npm Versions:** Ensure you have the latest versions installed.
 - **Verify Python Environment:** Make sure your virtual environment is activated and dependencies are installed.
+- **Deno Version:** Ensure you have Deno version 1.44.1 or later installed.
 - **Consult Documentation:** Refer to the [Project Documentation](#-project-documentation) for detailed guidance.
 
 ## 🔬 Prototype Concept
@@ -109,7 +119,7 @@ This prototype demonstrates the potential of integrating AI and quantum-inspired
 
 These technologies work together to create a more effective and personalized memory enhancement experience, laying the groundwork for future advancements in AI-powered cognitive assistance.
 
-## 🆕 Recent Changes and Improvements
+##  🆕 Recent Changes and Improvements
 
 Latest updates in our 1-2 day prototype development:
 
@@ -117,6 +127,7 @@ Latest updates in our 1-2 day prototype development:
 - **🚀 Basic Quantum-Inspired Optimization:** Implemented and tested a simple quantum-inspired optimization feature.
 - **🧹 Codebase Cleanup:** Streamlined the codebase by removing unused components and organizing test files.
 - **📚 Documentation Update:** Updated project documentation to reflect recent changes and development progress.
+- **🦕 Deno Integration:** Added Deno support for improved development workflow and additional runtime options.
 
 These improvements reflect our progress in the 1-2 day prototype development, focusing on core functionality and maintainability.
 
