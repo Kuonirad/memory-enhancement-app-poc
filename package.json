@@ -3,14 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/user-event": "^14.5.2",
     "css-select": "^5.1.0",
-    "nth-check": "^2.1.1",
-    "postcss": "^8.4.47",
     "postcss-loader": "^8.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,22 +43,42 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.23.4",
     "@svgr/webpack": "^8.1.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
     "@types/domexception": "^4.0.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "grunt": "^1.6.1",
     "grunt-contrib-concat": "^2.1.0",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.47",
     "prettier": "^3.2.5",
     "react-scripts": "^5.0.1",
     "resolve-url-loader": "^5.0.0",
     "rimraf": "^6.0.1",
+    "semver": "^7.6.3",
+    "serialize-javascript": "^6.0.2",
+    "shell-quote": "^1.8.1",
+    "sockjs": "^0.3.24",
     "svgo": "^3.2.0",
-    "web-vitals": "^4.2.3"
+    "terser": "^5.36.0",
+    "web-vitals": "^4.2.3",
+    "webpack-dev-middleware": "^7.4.2",
+    "yargs-parser": "^21.1.1"
   },
   "engines": {
     "node": "20.18.0",
     "npm": "10.9.0"
-  }
+  },
+  "description": "![GitHub](https://img.shields.io/github/license/Kuonirad/memory-enhancement-app-poc) ![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react) ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-3.9.0-orange?logo=tensorflow) ![Deno](https://img.shields.io/badge/Deno-1.44.1-green?logo=deno)",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

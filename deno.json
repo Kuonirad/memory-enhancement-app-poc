@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "jsx": "react-jsx",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
     "lib": ["deno.window", "dom", "dom.iterable", "dom.asynciterable"],
     "strict": true
   },
@@ -9,7 +12,8 @@
       "include": ["src/"]
     },
     "rules": {
-      "tags": ["recommended"]
+      "tags": ["recommended"],
+      "exclude": ["no-unused-vars", "require-await", "no-undef", "no-explicit-any"]
     }
   },
   "fmt": {

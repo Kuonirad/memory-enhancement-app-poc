@@ -1,7 +1,7 @@
 import "./App.css";
-import MemoryInput from "./components/MemoryInput";
-import MemoryDisplay from "./components/MemoryDisplay";
-import EnhancementTools from "./components/EnhancementTools";
+import MemoryInput from "./components/MemoryInput.js";
+import MemoryDisplay from "./components/MemoryDisplay.js";
+import EnhancementTools from "./components/EnhancementTools.js";
 
 function App() {
   return (
