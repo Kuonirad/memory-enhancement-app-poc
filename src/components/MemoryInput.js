@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState } from "preact/hooks";
+import React, { useState } from 'react';
 
 function MemoryInput() {
   const [memory, setMemory] = useState("");
@@ -12,7 +11,7 @@ function MemoryInput() {
   };
 
   return (
-    <div class="memory-input-component">
+    <div className="memory-input-component">
       <form onSubmit={handleSubmit}>
         <textarea
           placeholder="Enter your memory here..."

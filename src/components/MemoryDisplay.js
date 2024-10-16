@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState, useEffect } from "preact/hooks";
+import React, { useState, useEffect } from 'react';
 
 function MemoryDisplay() {
   const [memories, setMemories] = useState([]);
@@ -10,7 +9,7 @@ function MemoryDisplay() {
   }, []);
 
   return (
-    <div class="memory-display-component">
+    <div className="memory-display-component">
       <ul>
         {memories.map((memory, index) => (
           <li key={index}>{memory}</li>

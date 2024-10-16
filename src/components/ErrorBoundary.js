@@ -1,5 +1,4 @@
-/** @jsx h */
-import { h, Component } from "https://esm.sh/preact@10.5.15";
+import React, { Component } from 'react';
 
 class ErrorBoundary extends Component {
   constructor(props) {
