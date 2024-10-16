@@ -1,5 +1,6 @@
-import { h } from "preact";
-import { useState } from "preact/hooks";
+/** @jsx h */
+import { h } from "https://esm.sh/preact@10.5.15";
+import { useState } from "https://esm.sh/preact@10.5.15/hooks";
 import "./App.css";
 import MemoryInput from "./components/MemoryInput.js";
 import MemoryDisplay from "./components/MemoryDisplay.js";

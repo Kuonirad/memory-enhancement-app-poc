@@ -1,5 +1,6 @@
-import { h } from "preact";
-import { useState } from "preact/hooks";
+/** @jsx h */
+import { h } from "https://esm.sh/preact@10.5.15";
+import { useState } from "https://esm.sh/preact@10.5.15/hooks";
 
 function MemoryInput() {
   const [memory, setMemory] = useState("");

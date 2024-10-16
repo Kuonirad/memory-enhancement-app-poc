@@ -1,20 +1,24 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "jsx": "react-jsx",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "lib": ["deno.window", "dom", "dom.iterable", "dom.asynciterable"],
     "strict": true
   },
   "lint": {
     "files": {
-      "include": ["src/"]
+      "include": ["src/", "src/deno_components/"]
     },
     "rules": {
-      "tags": ["recommended"]
+      "tags": ["recommended"],
+      "exclude": ["no-unused-vars", "require-await", "no-undef", "no-explicit-any", "ban-ts-comment"]
     }
   },
   "fmt": {
     "files": {
-      "include": ["src/"]
+      "include": ["src/", "src/deno_components/"]
     },
     "options": {
       "useTabs": false,
@@ -25,8 +29,10 @@
     }
   },
   "test": {
-    "include": ["src/"],
+    "include": ["src/", "src/deno_components/"],
     "exclude": ["node_modules/"]
   },
-  "importMap": "import_map.json"
+  "importMap": "import_map.json",
+  "jsx": "react",
+  "jsxImportSource": "preact"
 }
