@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function MemoryInput() {
+function MemoryInput({ addMemory }) {
   const [memory, setMemory] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement memory saving logic
-    console.log("Memory saved:", memory);
-    setMemory("");
+    if (memory.trim() !== "") {
+      addMemory(memory);
+      console.log("Memory saved:", memory);
+      setMemory("");
+    }
   };
 
   return (
@@ -23,5 +26,9 @@ function MemoryInput() {
     </div>
   );
 }
+
+MemoryInput.propTypes = {
+  addMemory: PropTypes.func.isRequired,
+};
 
 export default MemoryInput;

@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function MemoryDisplay() {
-  const [memories, setMemories] = useState([]);
-
-  useEffect(() => {
-    // TODO: Implement fetching memories from storage
-    setMemories(["Sample memory 1", "Sample memory 2"]);
-  }, []);
-
+function MemoryDisplay({ memories }) {
   return (
     <div className="memory-display-component">
       <ul>
@@ -18,5 +12,9 @@ function MemoryDisplay() {
     </div>
   );
 }
+
+MemoryDisplay.propTypes = {
+  memories: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default MemoryDisplay;
