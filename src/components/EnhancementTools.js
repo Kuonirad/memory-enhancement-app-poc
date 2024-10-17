@@ -1,6 +1,4 @@
-/** @jsx h */
-import { h } from "preact";
-import { useState } from "preact/hooks";
+import React, { useState } from 'react';
 
 function EnhancementTools() {
   const [activeTools, setActiveTools] = useState([]);
@@ -14,22 +12,22 @@ function EnhancementTools() {
   };
 
   return (
-    <div class="enhancement-tools-component">
+    <div className="enhancement-tools-component">
       <button
         onClick={() => toggleTool("Categorize")}
-        class={activeTools.includes("Categorize") ? "active" : ""}
+        className={activeTools.includes("Categorize") ? "active" : ""}
       >
         Categorize
       </button>
       <button
         onClick={() => toggleTool("Visualize")}
-        class={activeTools.includes("Visualize") ? "active" : ""}
+        className={activeTools.includes("Visualize") ? "active" : ""}
       >
         Visualize
       </button>
       <button
         onClick={() => toggleTool("Associate")}
-        class={activeTools.includes("Associate") ? "active" : ""}
+        className={activeTools.includes("Associate") ? "active" : ""}
       >
         Associate
       </button>

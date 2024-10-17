@@ -21,6 +21,9 @@ jobs:
     - name: Install Node Dependencies
       run: npm ci
 
+    - name: Run npm audit
+      run: npm audit
+
     - name: Run ESLint
       run: npx eslint .
 
@@ -36,7 +39,7 @@ jobs:
         deno-version: v1.x
 
     - name: Run Deno Lint
-      run: deno lint
+      run: deno lint src/deno_components --config deno.json
 
     - name: Run Deno Tests
       run: deno test

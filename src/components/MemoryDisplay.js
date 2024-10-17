@@ -1,16 +1,9 @@
-import { h } from "preact";
-import { useState, useEffect } from "preact/hooks";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function MemoryDisplay() {
-  const [memories, setMemories] = useState([]);
-
-  useEffect(() => {
-    // TODO: Implement fetching memories from storage
-    setMemories(["Sample memory 1", "Sample memory 2"]);
-  }, []);
-
+function MemoryDisplay({ memories }) {
   return (
-    <div class="memory-display-component">
+    <div className="memory-display-component">
       <ul>
         {memories.map((memory, index) => (
           <li key={index}>{memory}</li>
@@ -19,5 +12,9 @@ function MemoryDisplay() {
     </div>
   );
 }
+
+MemoryDisplay.propTypes = {
+  memories: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default MemoryDisplay;
