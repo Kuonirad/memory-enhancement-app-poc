@@ -39,7 +39,7 @@ jobs:
         deno-version: v1.x
 
     - name: Run Deno Lint
-      run: deno lint
+      run: deno lint src/deno_components --config deno.json
 
     - name: Run Deno Tests
       run: deno test
